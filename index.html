@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo del Meme Latino</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <main id="app-container">
+        <!-- Intro Screen -->
+        <div id="intro-screen" class="screen active">
+            <div class="logo-emoji">😂🌎</div>
+            <h1>Crónicas del <span class="highlight">Meme</span> Latinoamericano</h1>
+            <p>Un recorrido histórico interactivo por los pilares del humor de internet en México y Latinoamérica. Disfruta de esta experiencia audiovisual con narración y videos.</p>
+            <button id="start-btn" class="glow-on-hover">▶️ Iniciar Reproducción Guiada</button>
+        </div>
+
+        <!-- Player Screen -->
+        <div id="player-screen" class="screen">
+            <div class="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            
+            <div class="glass-card">
+                <div class="meme-header">
+                    <span id="meme-year" class="badge"></span>
+                    <span id="meme-country" class="badge outline"></span>
+                </div>
+                <h2 id="meme-title">Cargando...</h2>
+                <div class="media-container" id="media-container">
+                    <!-- YouTube iframe will go here -->
+                </div>
+                <p id="meme-desc" class="description"></p>
+                
+                <div class="controls">
+                    <button id="prev-btn" class="icon-btn">⏪ Anterior</button>
+                    <button id="pause-btn" class="icon-btn">⏸️ Pausar</button>
+                    <button id="next-btn" class="icon-btn">Siguiente ⏩</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
